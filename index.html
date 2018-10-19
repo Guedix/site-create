@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-
 <html>
-
 
     <head>
         <meta charset="UTF-8">
@@ -14,23 +12,46 @@
         <link rel="shortcut icon" href="logomenor.jpg.jpg" type="image/x-icon" />
 
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
     </head>
       
     <style>
     body {background-color: rgb(241, 234, 211);}
-    main { margin: 0 auto ; padding: 0 ;}
-    
-    li a { font-family: 'Permanent Marker';}
+    li { color: black;}
+    li a { font-family: 'Oswald', sans-serif;}
+    ul li a:hover{ color: rgb(153, 155, 65);}
 
     .inicio { margin-top: 40px; text-align: center;}
+    .inicio p { 
+            font-family: 'Mali', cursive;
+            font-size: 1.2em;
+            line-height: 1.1em;
+            color:  rgb(153, 155, 65);
+    }
+    h2 { color: #c08d40; clear:left ; margin-left: 50px; font-family: 'Pacifico', cursive;}
+    h4 { font-style: italic; font-family: 'Oswald', sans-serif; color: black;}
+    .preco { font-style: italic;}
     .row { margin-top: 40px; text-align: center;}
 
-    .textos { margin: center; margin-left: 150px;}
+    .textos { margin: center; margin-left: 150px; font-family: 'Text Me One', sans-serif;}
 
     .efect:hover { transform: (1.5); transition: 0.10s;}
     
 
-    
+    footer { width: 100%; height: 260px; margin-top: 90px; background: rgb(15, 72, 119); border: solid 1px #d59903;}
+    footer ul {  text-align: center; margin-top:50px; margin-bottom: 20px;}
+    footer ul li { font-family: 'Fjalla One', sans-serif; letter-spacing: 0.1em; font-size: 1.2em; flex: 1;}
+    footer ul li a {color: white; text-decoration: none; cursor: pointer;}
+    footer small { text-align: center; margin-top: 50px; color: white; margin-left: 550px;}
      
     </style>
 
@@ -38,7 +59,9 @@
 
   <!-- Navbar -->
   <main>
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="background-color: #2c1a03;" >
+      <img src="img/churras.jpg" width="100%">
+
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="background-color: #c08d40;" >
           <!--<a class="navbar-brand" href="index.html">
             <img src="img/logos/logomenor.jpg.jpg" height="50"> Prattin's</a>-->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -46,8 +69,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 450px;">
+            <ul class="navbar-nav mr-auto" style="font-size: 1.2em" style="Word-spacing: 0.5em;">
               <li class="nav-item active">
                 <a class="nav-link text-white" href="index.html">INICIO
                   <span class="sr-only">(current)</span>
@@ -56,10 +79,10 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" wm-link="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">
-                  ESCOLHA SEU PRATO
+                  CARDÁPIO
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" wm-link="kitmedia.html">Prato Executivo</a>
+                  <a class="dropdown-item" wm-link="kitmedia.html">CARDÁPIO</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" wm-link="kitpequena.html">Kitnet Pequena</a>
                   <a class="dropdown-item" wm-link="kitgrande.html">Kitnet Grande</a>
@@ -78,8 +101,6 @@
             </ul>
         </nav>
 
-  <img src="img/churras.jpg" width="100%">
-
          <!--Texto inicial-->
 
          <div class=" inicio col-md-offset-2">
@@ -87,35 +108,63 @@
          </div>
 
           <div class="row container">
-            <div class="col-sm-8"><h4><strong style="font-weight:bolder; border-bottom: solid 1px #d59903">Mesas de Salada e Feijoada</strong></h4></div>
-            <div class="col-sm-4">R$ 49,00</div>
-                     
-             <p class="textos text-justify" style="margin-top: 20px;">Degustação livre das variadas opções de saladas, que inclui cogumelos, endívias, aspargos, alcachofras, grãos e outros vegetais, peixe como salmão, também queijos finos, presuntos, pães fresquinhos, azeites nobres, molhos e temperos, além dos pratos típicos gaúchos. Às quartas e sábados, servimos feijoada.</p>
+            
+                <div class="col-sm-8"><h4><strong style="font-weight:bolder; border-bottom: solid 1px #d59903">Mesas de Salada e Feijoada</strong></h4></div>
+                <div class="col-sm-4 preco"><b>R$ 49,00 </b></div>
+                        
+                <p class="textos text-justify" style="margin-top: 20px;">Degustação livre das variadas opções de saladas, que inclui cogumelos, endívias, aspargos, alcachofras, grãos e outros vegetais, peixe como salmão, também queijos finos, presuntos, pães fresquinhos, azeites nobres, molhos e temperos, além dos pratos típicos gaúchos. Às quartas e sábados, servimos feijoada. Para mais opções, CLIQUE <a href="">aqui</a></p>
             
           </div>
 
           <hr style=" width: 1005px; height:1px; border:none; color:#d59903; background-color:#d59903; margin-top: 0px; margin-bottom: 0px; margin-top: 20px;"/>
 
-            <div class="container" style="margin-top: 20px;">
-                <h3 style="text-align:center;"><strong style="font-weight:bolder; border-bottom: solid 1px #d59903;">Reservas</strong></h3>
-                <div class="row" style="margin-top: -5px;">
-                  <div class="col-sm-6">
-                    <div class="card" style="background-color: rgb(241, 234, 211); border: 0px;" >
-                      <div class="card-body"> 
-                        <h5 class="card-title">Quer reservar JÁ ?</h5>
-                        <p class="card-text">Entre em contato imediatamente!</p>
-                        <a href="#" class="btn btn-success efect">(11) 3733-1680</a>
-                      </div>
-                      
+          <h3 style="text-align:center; margin-top: 20px; letter-spacing: 0.2em; "><strong style="font-weight:bolder; border-bottom: solid 1px #d59903;">Reservas</strong></h3>
+
+          <div class="container row" style="margin-left: 100px; margin-top: -4px;">
+            <div class="col-sm-6">
+              <div class="card" style="background-color: rgb(241, 234, 211); border: 0px;">
+                <div class="card-body">
+                  <h5 class="card-title">Quer reservar JÁ ?</h5>
+                  <p class="card-text" style="font-family: 'Text Me One', sans-serif;">Acesse o link para reservar imediatamente!</p>
+                  <a href="reserva.html" class="btn btn-success" style="font-family: 'Roboto Condensed', sans-serif;">RESERVAR</a>
+                </div>
+              </div>
             </div>
+            <div class="col-sm-6">
+              <div class="card" style="background-color: rgb(241, 234, 211); border: 0px;">
+                <div class="card-body">
+                  <h5 class="card-title">OU LIGUE</h5>
+                  <p class="card-text" style="font-family: 'Text Me One', sans-serif;">Entre em contato para reservar</p>
+                  <a href="#" class="btn btn-success" style="font-family: 'Roboto Condensed', sans-serif;">(11) 3733-1680</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <hr style=" width: 1005px; height:1px; border:none; color: #424241; background-color:#777774; margin-top: 0px; margin-bottom: 0px; margin-top: 70px;"/>
-  </main>   
-  <!-- Título -->
+          <hr style=" width: 1005px; height:1px; border:none; color: #beb8b8; background-color:#c0c0bc; margin-top: 0px; margin-bottom: 0px; margin-top: 70px;"/>
+
+           <div class="container" style="margin-top: 20px;">
  
+               <h3 style="color: #91918e">Horário de funcionamento</h3>
+               <p style="text-align: left"><b>Domingo, segunda, terça e quarta</b> das 11:45 hs até 00:00 hs<br>
+                <b>Quinta</b> das 11:45 hs até 01:00 h<br>
+                <b>Sexta e sábado</b> das 11:45 hs até 02:00 hs</p>
+           </div> 
 
-    <main class="p-3" wm-link-destino></main>
-    <!-- padding 3 -->
+           <hr style=" width: 1005px; height:1px; border:none; color: #d4d0d0; background-color:#c0c0bc; margin-top: 0px; margin-bottom: 0px; margin-top: 70px;"/>
+
+           <footer>
+                    <ul class="list-inline">
+                      <li><a href="#">♨POLITICA DE PRIVACIDADE</a></li>                     
+                      <li><a href="#">♨TERMOS DE USO</a></li>
+                      <li><a href="#">♨FAQ</a></li>
+                      <li><a href="#">♨FALE CONOSCO</a></li>
+                    </ul>
+                    <small>© 2015 Prattin's, Inc. All Rights Reserved.</small>
+                    <h2>Prattin's ®</h2>
+           </footer>
+           
+  </main>   
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
