@@ -12,10 +12,16 @@
               <meta name="application-name" content="imedia Brasil">
 
               <link href="css/estilo.css" rel="stylesheet" media="screen">
+              <link href="bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+              <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
               <style>
-              h2 { color: #c08d40 ;} 
-              
+              h2 { color: #ddca1f ;}
+              body { margin-left: 400px; margin-top: 20px; }
+              main { margin-left: 50px;}
+              a { color: black; font-family: 'Oswald', sans-serif; font-size: 2em;}
+              label { margin-top: 10px; font-family: 'Roboto Slab', serif;}
               </style>
                              
 
@@ -27,22 +33,39 @@
                 <h2>RESERVA PRATTIN'S</h2>
                 <form action="formulario.html" method="post">
               
-                <label for="name">Nome completo</label>
+                <label for="name">Nome Completo:</label>
                 <input type="name" name="name" id="name" size="30" maxlength="100" placeholder="Insira seu nome" autofocus required>
 
-                <label for="name">CPF</label>
+                <label for="name">CPF:</label>
                 <input type="tel" name="name" id="name" size="30" maxlength="100" placeholder="CPF"> 
   
-                <label for="tel">Telefone</label>
+                <label for="tel">Telefone:</label>
                 <input type="tel" name="tel" id="tel" size="30" maxlength="30" placeholder="Telefone">
 
-                <label for="number">Nº de pessoas</label>
-                <input type="number" name="number" id="number" size="30" maxlength="30" placeholder="Nº de pessoas">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" size="30" maxlength="100" placeholder="email" required>
 
-                <label for="date">DATA</label>
+                <label for="number">Nº de pessoas:</label>
+                <input type="number" name="number" id="number" max="10" size="30" maxlength="100" placeholder="Nº de pessoas">
+
+                <label for="date">DATA DE RESERVA</label>
                 <input type="date" name="date" id="date">
+               
+
+                <form action="datlist.html" method="post">
+                    <label for="text">LOCAL DA RSERVA</label>
+                    <input type="text" name="nome_lojas" id="nome_lojas" placeholder="local da reserva" list="lojas"  size="50" maxlength="100">
+                            <datalist id="lojas">
+                                      <option value="Jardins">Rua Augusta, 2. 077</option>
+                                      <option value="Vila Olímpia">Av. dos Bandeirantes, 538 </option>
+                                      <option value="Moema">Av. Moreira Guimarães, 964 </option>
+                                      <option value="Santo Amaro">Av. Santo Amaro, 6.824 </option>
+                                      <option value="Barra da Tijuca">Av. Ayrton Senna, 2150 – BL. O – 4º andar</option>
+                            </datalist>
+      
+                </form>
   
-                <a href="index.html"><input type="submit" name="RESERVAR" value="RESERVAR" id="RESERVAR"><a href="index.html"></a>
+                <button class="btn btn-default btn-block btn-warning" style="margin-top: 20px; text-decoration: none;"><a href="prattins.html">RESERVAR</a></button>
   
 
                 </form>
