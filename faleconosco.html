@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Prattin's</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="icon" href="img/logos/logomenor.jpg.jpg" type="image/x-icon" />
+        <link rel="shortcut icon" href="logomenor.jpg.jpg" type="image/x-icon" />
+
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    </head>
+      
+    <style>
+    body {background-color: rgb(241, 234, 211);}
+    li { color: black;}
+    li a { font-family: 'Oswald', sans-serif;}
+    ul li a:hover{ color: rgb(153, 155, 65);}
+
+    .inicio { margin-top: 70px; text-align: center;}
+    .inicio p { 
+            font-family: 'Mali', cursive;
+            font-size: 1.2em;
+            line-height: 1.1em;
+            color:  rgb(153, 155, 65);
+    }
+    h2 { color: #c08d40; clear:left ; margin-left: 50px; font-family: 'Pacifico', cursive;}
+    h4 { font-style: italic; font-family: 'Oswald', sans-serif; color: black;}
+    .preco { font-style: italic;}
+    .row { margin-top: 40px; text-align: center;}
+
+    .textos { margin: center; margin-left: 150px; font-family: 'Text Me One', sans-serif;}
+
+    .efect:hover { transform: (1.5); transition: 0.10s;}
+    
+
+    footer { width: 100%; height: 260px; margin-top: 90px; background: rgb(15, 72, 119); border: solid 1px #d59903;}
+    footer ul {  text-align: center; margin-top:50px; margin-bottom: 20px;}
+    footer ul li { font-family: 'Fjalla One', sans-serif; letter-spacing: 0.1em; font-size: 1.2em; flex: 1;}
+    footer ul li a {color: white; text-decoration: none; cursor: pointer;}
+    footer small { text-align: center; margin-top: 50px; color: white; margin-left: 550px;}
+     
+    </style>
+
+<body>
+
+  <!-- Navbar -->
+  <main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand h2" href="index.html" style="color: #c08d40;">Prattin's</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reserva.html">RESERVAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                FALE CONOSCO
+              </a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+
+      </nav>
+
+      <form class="text-center">
+        <div class="form-group" style="margin-top: 60px;">
+            <label for="nome">Nome Completo</label>
+            <input  type="text" id="nome" placeholder="Nome" autofocus/>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email"/>
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Senha"/>
+        </div>  
+           
+        <label for="selecao">Prato preferido?</label>
+        <div class="form-group">
+            <select id="selecao">
+               <option>Escolha uma opção</option>
+               <option>Feijoada</option>
+               <option>Churrasco</option>
+               <option>Sushi</option>
+               <option>Pizza</option>
+           </select>
+        </div>               
+        
+        <div class="form-group">
+              <label for="comentario">Comentários</label>
+              <textarea  id="comentario"></textarea>
+        </div>
+
+        <div class="checkbox">
+            <label for="lista">
+               <input type="checkbox" id="lista">Inscrever-me na newsletter
+            </label>
+        </div>
+        
+        <input class="btn btn-success btn-block" type="submit" value="Enviar">
+    </form>
+</div>
+
+      
+
+           <footer class="Nav-justified ">
+                    <ul class="list-inline">
+                      <li><a href="politica.html">♨POLITICA DE PRIVACIDADE</a></li>                     
+                      <li><a href="termos.html">♨TERMOS DE USO</a></li>
+                      <li><a href="faq.html">♨FAQ</a></li>
+                      <li><a href="#">♨FALE CONOSCO</a></li>
+                    </ul>
+                    <small>© 2015 Prattin's, Inc. All Rights Reserved.</small>
+                    <h2>Prattin's ®</h2>
+           </footer>
+           
+  </main>   
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/navegacao.js"></script>
+
+</body>
+
+</html>

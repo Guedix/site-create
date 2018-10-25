@@ -25,12 +25,12 @@
     </head>
       
     <style>
-    body {background-color: rgb(241, 234, 211);}
+    body {background-color: rgb(241, 234, 211); border: 1px solid #d59903;}
     li { color: black;}
     li a { font-family: 'Oswald', sans-serif;}
     ul li a:hover{ color: rgb(153, 155, 65);}
 
-    .inicio { margin-top: 40px; text-align: center;}
+    .inicio { margin-top: 70px; text-align: center;}
     .inicio p { 
             font-family: 'Mali', cursive;
             font-size: 1.2em;
@@ -59,53 +59,64 @@
 
   <!-- Navbar -->
   <main>
-      <img src="img/churras.jpg" width="100%">
 
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar" style="background-color: #c08d40;" >
-          <!--<a class="navbar-brand" href="index.html">
-            <img src="img/logos/logomenor.jpg.jpg" height="50"> Prattin's</a>-->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color: rgb(15, 15, 15);">
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 450px;">
-            <ul class="navbar-nav mr-auto" style="font-size: 1.2em" style="Word-spacing: 0.5em;">
-              <li class="nav-item active">
-                <a class="nav-link text-white" href="index.html">INICIO
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" wm-link="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  CARDÁPIO
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" wm-link="kitmedia.html">CARDÁPIO</a>
-                  <!--<div class="dropdown-divider"></div>-->
-                  <a class="dropdown-item" wm-link="kitpequena.html">Kitnet Pequena</a>
-                  <a class="dropdown-item" wm-link="kitgrande.html">Kitnet Grande</a>
-                  <a class="dropdown-item" wm-link="kitluxo.html">Kitnet Luxo</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#lavanderia">FOTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#imediacoes">HISTÓRIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contato">CONTATO</a>
-              </li>
-            </ul>
-        </nav>
+        <div class="navbar-header"> <!--Adicionar logo da empresa-->
+                  
+          <h2><a href="#" class="navbar-brand" style="color:rgba(197, 135, 54, 0.959);">Prattin's</a></h2>
+
+        </div>
+        <!--<a class="navbar-brand" href="index.html">
+          <img src="img/logos/logomenor.jpg.jpg" height="50"> Prattin's</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav mr-auto" style="font-size: 1.1em" style="Word-spacing: 0.5em;">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color:rgba(197, 135, 54, 0.959);">INICIO
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" wm-link="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color:rgba(197, 135, 54, 0.959);"
+                aria-haspopup="true" aria-expanded="false">
+                CARDÁPIO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" wm-link="kitpequena.html">Pratos Executivos</a>
+                <a class="dropdown-item" wm-link="kitgrande.html">Especialidade da casa</a>
+                <a class="dropdown-item" wm-link="kitluxo.html">Monte seu prato</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:rgba(197, 135, 54, 0.959);">FOTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:rgba(197, 135, 54, 0.959);">LOCALIZAÇÃO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faleconosco.html" style="color:rgba(197, 135, 54, 0.959);">CONTATO</a>
+            </li>
+          </ul>
+
+          <button type="button"
+                  class="btn btn-warning navbar-btn">Login</button>
+
+      </nav>
+
+      <img src="img/churras.jpg" width="100%" style="border: 1px solid #d59903; padding-top: 63px;">
 
          <!--Texto inicial-->
 
          <div class=" inicio col-md-offset-2">
-               <p class="text-center">Trazemos a você novas opções para seu almoço ou jantar. Os cortes de carne, frango ou peixe podem ser escolhidos e consumidos separadamente do rodízio completo e acompanhadas pela Mesa de Saladas livre. Ou se desejar, você pode optar pelo consumo somente da Mesa de Saladas.</p>
+               <p class="text-center" style="margin-left:130px; margin-right:130px">Trazemos a você novas opções para seu almoço ou jantar. Os cortes de carne, frango ou peixe podem ser escolhidos e consumidos separadamente do rodízio completo e acompanhadas pela Mesa de Saladas livre. Ou se desejar, você pode optar pelo consumo somente da Mesa de Saladas.</p>
          </div>
+
+         <hr style=" width: 1005px; height:1px; border:none; color:#d59903; background-color:#d59903; margin-top: 0px; margin-bottom: 0px; margin-top: 20px;"/>
 
           <div class="row container">
             
@@ -153,7 +164,7 @@
 
            <hr style=" width: 1005px; height:1px; border:none; color: #d4d0d0; background-color:#c0c0bc; margin-top: 0px; margin-bottom: 0px; margin-top: 70px;"/>
 
-           <footer>
+           <footer class="Nav-justified ">
                     <ul class="list-inline">
                       <li><a href="politica.html">♨POLITICA DE PRIVACIDADE</a></li>                     
                       <li><a href="termos.html">♨TERMOS DE USO</a></li>
